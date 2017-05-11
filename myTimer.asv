@@ -1,0 +1,27 @@
+
+
+
+datenum('6:00:00') - rem(now,1)
+
+
+
+
+t=timer('Name','CircleTimer',...
+ 'TimerFcn',{@test,5},...
+ 'Period',5,...
+ 'ExecutionMode','fixedRate',...
+ 'StartFcn',{@test,9});
+
+
+
+
+function test(obj,event,inp)
+
+    t = sprintf('hello====>%d=======>%s',inp,datestr(now));
+    disp(t);
+    
+    
+    
+    
+    
+end
